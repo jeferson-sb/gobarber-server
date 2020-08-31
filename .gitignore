@@ -6,3 +6,4 @@ build
 
 tmp/*
 !tmp/.gitkeep
+*.log

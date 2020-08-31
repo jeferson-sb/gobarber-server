@@ -5,7 +5,7 @@ import AppError from '@shared/errors/AppError';
 import Appointment from '../infra/typeorm/entities/Appointment';
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
 
-interface IIRequest {
+interface IRequest {
   providerId: string;
   datetime: Date;
 }
@@ -20,14 +20,14 @@ class CreateAppointmentService {
   public async execute({
     datetime,
     providerId,
-  }: IIRequest): Promise<Appointment> {
+  }: IRequest): Promise<Appointment> {
     const appointmentDate = startOfHour(datetime);
     const findAppointmentInSameDate = await this.appointmentsRepository.findByDate(
       appointmentDate,
     );
 
     if (findAppointmentInSameDate) {
-      throw new AppError('This appointment is already booked.');
+      throw new AppError('This appointment is already booked');
     }
 
     const appointment = await this.appointmentsRepository.create({
