@@ -14,6 +14,7 @@
   "author": "Jeferson S. Brito",
   "license": "MIT",
   "dependencies": {
+    "@types/mongodb": "^3.5.27",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "date-fns": "^2.14.0",
