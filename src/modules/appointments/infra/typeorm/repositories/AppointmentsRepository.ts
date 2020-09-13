@@ -31,7 +31,7 @@ class AppointmentsRepository implements IAppointmentsRepository {
     const parsedMonth = String(month).padStart(2, '0');
     const appointments = await this.ormRepository.find({
       where: {
-        providerId,
+        provider_id: providerId,
         datetime: Raw(
           dateFieldName =>
             `to_char(${dateFieldName}, 'MM-YYYY') = '${parsedMonth}-${year}' `,
