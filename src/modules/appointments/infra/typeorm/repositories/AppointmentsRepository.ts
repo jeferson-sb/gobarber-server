@@ -53,7 +53,7 @@ class AppointmentsRepository implements IAppointmentsRepository {
 
     const appointments = await this.ormRepository.find({
       where: {
-        providerId,
+        provider_id: providerId,
         datetime: Raw(
           dateFieldName =>
             `to_char(${dateFieldName}, 'DD-MM-YYYY') = '${parsedDay}-${parsedMonth}-${year}' `,
