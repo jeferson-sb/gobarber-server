@@ -3,6 +3,7 @@ import 'dotenv/config';
 import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import { errors } from 'celebrate';
+import morgan from 'morgan';
 import 'express-async-errors';
 
 import routes from '@shared/infra/http/routes';
@@ -17,6 +18,7 @@ const app = express();
 app.use(rateLimiter);
 app.use(cors());
 app.use(express.json());
+app.use(morgan('dev'));
 app.use('/files', express.static(uploadConfig.uploadsFolder));
 app.use('/api', routes);
 
