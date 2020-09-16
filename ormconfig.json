@@ -2,7 +2,7 @@
   {
     "name": "default",
     "type": "postgres",
-    "host": "localhost",
+    "host": "gobarber_postgres",
     "port": 5432,
     "username": "postgres",
     "password": "docker",
@@ -16,7 +16,7 @@
   {
     "name": "mongo",
     "type": "mongodb",
-    "host": "localhost",
+    "host": "gobarber_mongodb",
     "port": 27017,
     "database": "gostack_gobarber",
     "useUnifiedTopology": true,
