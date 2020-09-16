@@ -5,7 +5,6 @@
     "jest": true
   },
   "extends": [
-    "plugin:@typescript-eslint/recommended",
     "airbnb-base",
     "prettier/@typescript-eslint",
     "plugin:prettier/recommended"
