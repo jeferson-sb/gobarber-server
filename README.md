@@ -1,11 +1,24 @@
+<div align="center">
+  <img src=".github/logo.svg" />
+
+  ![](https://img.shields.io/badge/GoStack-12.0-success?style=flat-square)
+  ![](https://img.shields.io/badge/TypeScript-4.0.2-blue?style=flat-square)
+  ![](https://img.shields.io/badge/coverage-99%-success?style=flat-square)
+</div>
+
 ## 💡 Project
 
-Gobarber is a full-stack application for barbers to with their customers built with React, React Native and Node.js
+Gobarber is a full-stack application to help barbers scheduling appointments with their customers built with React, React Native and Node.js
+
+- [Gobarber Web](https://github.com/jeferson-sb/gobarber-web)
+- Gobarber Server
+- [Gobarber Mobile]()
 
 ## 🚀 Quick start
 
 ### Pre-requisites
 
+- Node.js >= 12.18
 - Docker >= 19.03.12
 
 > Copy .env.example to .env and fill out with your own enviroment credentials
@@ -53,9 +66,12 @@ $ yarn test
 
 ## Docs
 
+Start server
 ```
-Go to: http://localhost:3333/api-docs
+$ yarn dev:server
 ```
+
+Access swagger docs by opening: [http://localhost:3333/api-docs](http://localhost:3333/api-docs)
 
 ## Lint
 
