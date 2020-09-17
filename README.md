@@ -1,5 +1,5 @@
 <div align="center">
-  <img src=".github/logo.svg" />
+  <img src=".github/logo-dark.svg" />
 
   ![](https://img.shields.io/badge/GoStack-12.0-success?style=flat-square)
   ![](https://img.shields.io/badge/TypeScript-4.0.2-blue?style=flat-square)
