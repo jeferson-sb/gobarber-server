@@ -1,4 +1,5 @@
 ## 💡 Project
+
 Gobarber is a full-stack application for barbers to with their customers built with React, React Native and Node.js
 
 ## 🚀 Quick start
@@ -19,22 +20,27 @@ $ yarn
 ### Usage
 
 Run all migrations
+
 ```sh
 $ yarn typeorm migration:run
 ```
 
 Start development server
+
 ```sh
 $ yarn dev:server
 ```
 
 ### Installation (Docker)
 
+Starting containers
+
 ```sh
 $ docker-compose up
 ```
 
 Stoping containers
+
 ```sh
 $ docker-compose stop
 ```
@@ -46,6 +52,10 @@ $ yarn test
 ```
 
 ## Docs
+
+```
+Go to: http://localhost:3333/api-docs
+```
 
 ## Lint
 

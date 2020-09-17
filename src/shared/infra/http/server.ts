@@ -5,12 +5,14 @@ import cors from 'cors';
 import { errors } from 'celebrate';
 import morgan from 'morgan';
 import 'express-async-errors';
+import swaggerUi from 'swagger-ui-express';
 
 import routes from '@shared/infra/http/routes';
 import '@shared/infra/typeorm';
 import '@shared/container';
 import uploadConfig from '@config/upload';
 import AppError from '@shared/errors/AppError';
+import apiDocs from '../../../../APIdocs.json';
 import rateLimiter from './middlewares/rateLimiter';
 
 const app = express();
@@ -21,7 +23,13 @@ app.use(express.json());
 app.use(morgan('dev'));
 app.use('/files', express.static(uploadConfig.uploadsFolder));
 app.use('/api', routes);
-
+app.use(
+  '/api-docs',
+  swaggerUi.serve,
+  swaggerUi.setup(apiDocs, {
+    explorer: true,
+  }),
+);
 app.use(errors());
 
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
