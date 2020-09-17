@@ -2,6 +2,8 @@ import 'reflect-metadata';
 import 'dotenv/config';
 import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
+import helmet from 'helmet';
+import compression from 'compression'
 import { errors } from 'celebrate';
 import morgan from 'morgan';
 import 'express-async-errors';
@@ -19,6 +21,8 @@ const app = express();
 
 app.use(rateLimiter);
 app.use(cors());
+app.use(helmet());
+app.use(compression());
 app.use(express.json());
 app.use(morgan('dev'));
 app.use('/files', express.static(uploadConfig.uploadsFolder));

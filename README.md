@@ -1,8 +1,7 @@
 <div align="center">
-  <img src=".github/logo-dark.svg" />
-  <br />
+  <img src=".github/logo-dark.svg" style="margin-bottom: 20px" />
 
-  ![](https://img.shields.io/badge/GoStack-12.0-success?style=flat-square)
+  ![](https://img.shields.io/badge/GoStack-12-blueviolet?style=flat-square&logo=react)
   ![](https://img.shields.io/badge/TypeScript-4.0.2-blue?style=flat-square)
   ![](https://img.shields.io/badge/coverage-99-success?style=flat-square)
 </div>
