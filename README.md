@@ -1,9 +1,10 @@
 <div align="center">
   <img src=".github/logo-dark.svg" />
+  <br />
 
   ![](https://img.shields.io/badge/GoStack-12.0-success?style=flat-square)
   ![](https://img.shields.io/badge/TypeScript-4.0.2-blue?style=flat-square)
-  ![](https://img.shields.io/badge/coverage-99%-success?style=flat-square)
+  ![](https://img.shields.io/badge/coverage-99-success?style=flat-square)
 </div>
 
 ## 💡 Project
