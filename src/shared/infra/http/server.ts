@@ -3,7 +3,7 @@ import 'dotenv/config';
 import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
-import compression from 'compression'
+import compression from 'compression';
 import { errors } from 'celebrate';
 import morgan from 'morgan';
 import 'express-async-errors';
@@ -19,8 +19,12 @@ import rateLimiter from './middlewares/rateLimiter';
 
 const app = express();
 
+app.use(
+  cors({
+    origin: process.env.APP_WEB_URL,
+  }),
+);
 app.use(rateLimiter);
-app.use(cors());
 app.use(helmet());
 app.use(compression());
 app.use(express.json());
