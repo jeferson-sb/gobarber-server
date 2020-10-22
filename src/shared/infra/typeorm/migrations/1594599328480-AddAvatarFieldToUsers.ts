@@ -1,4 +1,5 @@
 import { MigrationInterface, QueryRunner, TableColumn } from 'typeorm';
+
 export default class AddAvatarFieldToUsers1594599328480
   implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {

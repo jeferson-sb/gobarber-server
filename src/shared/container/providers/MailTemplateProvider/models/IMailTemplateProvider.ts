@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import IParseMailTemplateDTO from '../dtos/IParseTemplateDTO';
 
 export default interface IMailTemplateProvider {

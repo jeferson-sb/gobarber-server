@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-useless-constructor */
 import 'reflect-metadata';
 import { injectable, inject } from 'tsyringe';
 import { classToClass } from 'class-transformer';

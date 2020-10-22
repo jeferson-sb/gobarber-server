@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-useless-constructor */
 import { injectable, inject } from 'tsyringe';
 
 import AppError from '@shared/errors/AppError';

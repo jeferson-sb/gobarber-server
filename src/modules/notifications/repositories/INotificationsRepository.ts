@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import ICreateNotificationDTO from '../dtos/ICreateNotificationDTO';
 import Notification from '../infra/typeorm/schemas/Notification';
 

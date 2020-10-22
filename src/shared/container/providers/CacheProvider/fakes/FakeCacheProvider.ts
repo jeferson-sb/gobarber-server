@@ -10,6 +10,7 @@ export default class FakeCacheProvider implements ICacheProvider {
   async save(key: string, value: string): Promise<void> {
     this.cache[key] = JSON.stringify(value);
   }
+
   async recover<T>(key: string): Promise<T | null> {
     const data = this.cache[key];
     if (!data) {
@@ -18,6 +19,7 @@ export default class FakeCacheProvider implements ICacheProvider {
     const parsedData = JSON.parse(data) as T;
     return parsedData;
   }
+
   async invalidate(key: string): Promise<void> {
     delete this.cache[key];
   }

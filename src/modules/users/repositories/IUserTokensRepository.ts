@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import UserToken from '../infra/typeorm/entities/UserToken';
 
 export default interface IUserTokensRepository {
