@@ -14,7 +14,7 @@
   "author": "Jeferson S. Brito",
   "license": "MIT",
   "dependencies": {
-    "@types/mongodb": "^3.5.27",
+    "@types/mongodb": "^3.6.0",
     "bcryptjs": "^2.4.3",
     "celebrate": "^13.0.2",
     "class-transformer": "^0.3.1",
